@@ -8,9 +8,9 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle style =
-    ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
     return (Scaffold(
-      backgroundColor: Color(0xff5956E9),
+      backgroundColor: Theme.of(context).primaryColor,
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -20,7 +20,6 @@ class Splash extends StatelessWidget {
               child: Center(
                 child: Text('Find your Gadget',
                     style: TextStyle(
-                        fontFamily: 'Raleway',
                         color: Colors.white,
                         fontSize: 65.0,
                         fontWeight: FontWeight.bold),
@@ -49,8 +48,8 @@ class Splash extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0)),
                     padding: const EdgeInsets.symmetric(
                         horizontal: 80, vertical: 22),
-                    textStyle:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.w700)),
+                    textStyle: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.w700)),
                 onPressed: onPress,
                 child: const Text('Get Started'))
           ],

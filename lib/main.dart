@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/screens/no_connection.dart';
+import 'package:ecommerce_app/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFF5956E9),
+        primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
       home: const NoConnection(),
