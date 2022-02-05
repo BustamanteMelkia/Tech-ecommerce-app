@@ -21,7 +21,7 @@ class EmptyState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(50),
+      padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 65),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[

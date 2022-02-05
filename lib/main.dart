@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/no-favorites.dart';
 import 'package:ecommerce_app/screens/no_connection.dart';
 import 'package:ecommerce_app/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home: const NoConnection(),
+      home: const NoFavorites(),
     );
   }
 }
