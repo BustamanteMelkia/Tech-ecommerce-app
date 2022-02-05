@@ -39,7 +39,7 @@ class Splash extends StatelessWidget {
                     },
                     blendMode: BlendMode.dstIn,
                     child: const Image(
-                        image: AssetImage('assets/imgs/splash.png'),
+                        image: AssetImage('assets/images/splash.png'),
                         fit: BoxFit.contain))),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
