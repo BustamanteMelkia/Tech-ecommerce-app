@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/screens/no_favorites.dart';
 import 'package:ecommerce_app/screens/no_connection.dart';
 import 'package:ecommerce_app/screens/no_history.dart';
+import 'package:ecommerce_app/screens/profile.dart';
 import 'package:ecommerce_app/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home: const NoHistory(),
+      home: const Profile(),
     );
   }
 }
