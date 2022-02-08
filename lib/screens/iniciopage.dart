@@ -10,65 +10,77 @@ class InicioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController _searchController = new TextEditingController();
     String _searchText = "";
-    return Container(
-      child:Padding(
-        padding: const EdgeInsets.fromLTRB(0.0, 63.0, 0.0, 0.0),
-        child: Column(
-          children: <Widget>[
-            Padding(padding: EdgeInsets.only(left:50),
-                child: Row(
+    return Scaffold(
 
-                  children: [
-                    const Padding(padding: EdgeInsets.only(right: 20,),child: Icon(Icons.menu,size: 30),),
-                    SizedBox(
-                      width: 267.0,
-                      child: TextField(
 
-                        onSubmitted: (value) {
+      body:  Container(
 
-                        },
-                        controller: _searchController,
-                        decoration: InputDecoration(
+          child:Padding(
+            padding: const EdgeInsets.fromLTRB(0.0, 63.0, 0.0, 0.0),
+            child: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.only(left:50),
+                    child: Row(
 
-                          hintText: "Search",
-                          prefixIcon: const Icon(
-                            Icons.search,
-                            color: Colors.black,
-                          ),
-                          suffixIcon: _searchText.isNotEmpty
-                              ? IconButton(
-                            icon: Icon(Icons.clear),
-                            onPressed: () {
+                      children: [
+                        const Padding(padding: EdgeInsets.only(right: 20,),child: Icon(Icons.menu,size: 30),),
+                        SizedBox(
+                          width: 267.0,
+                          child: TextField(
+                            onTap: (){
 
                             },
-                          )
-                              : null,
-                          border: const OutlineInputBorder(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(30.0),
+
+                            onSubmitted: (value) {
+
+                            },
+                            controller: _searchController,
+                            decoration: InputDecoration(
+
+                              hintText: "Search",
+                              prefixIcon: const Icon(
+                                Icons.search,
+                                color: Colors.black,
+                              ),
+                              suffixIcon: _searchText.isNotEmpty
+                                  ? IconButton(
+                                icon: Icon(Icons.clear),
+                                onPressed: () {
+
+                                },
+                              )
+                                  : null,
+                              border: const OutlineInputBorder(
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(30.0),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    )
+                        )
 
 
-                  ],
-                ),
-            ),
+                      ],
+                    ),
+                  ),
 
-            const Padding(padding: EdgeInsets.only(right:40,top: 55.0,left: 50),
-            child: Text('Order online collect in store',style: TextStyle(fontFamily: 'Raleway',fontSize: 34.0,fontWeight: FontWeight.w700),),
-            ),
-            //Caroussel()
-            const Padding(padding: EdgeInsets.only(left: 0),child: SelectionScreen(),)
+                  const Padding(padding: EdgeInsets.only(right:40,top: 55.0,left: 50),
+                    child: Text('Order online collect in store',style: TextStyle(fontFamily: 'Raleway',fontSize: 34.0,fontWeight: FontWeight.w700),),
+                  ),
+                  //Caroussel()
+                  const Padding(padding: EdgeInsets.only(left: 0),child: SelectionScreen(),)
 
 
-          ],
-        ),
-      )
-          
+                ],
+              ),
+            )
 
-    );
+          )
+
+
+      ),
+    )
+     ;
   }
 }
