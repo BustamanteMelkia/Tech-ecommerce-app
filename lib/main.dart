@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/cart.dart';
 import 'package:ecommerce_app/screens/loginscreen.dart';
 import 'package:ecommerce_app/screens/no_favorites.dart';
 import 'package:ecommerce_app/screens/no_connection.dart';
@@ -17,13 +18,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: const Color(0xFF5956E9),
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home: const Profile(),
+      home: Cart(),
     );
   }
 }

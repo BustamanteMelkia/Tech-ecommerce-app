@@ -54,3 +54,22 @@ class MediumButton extends Button {
           text: text,
         );
 }
+
+class LargeButton extends Button {
+  final VoidCallback? onClick;
+  final String text;
+
+  LargeButton({
+    Key? key,
+    this.text = 'click',
+    this.onClick,
+  }) : super(
+          key: key,
+          color: const Color(0xFF5956E9),
+          fontSize: 20,
+          height: 70,
+          width: 314,
+          onClick: onClick,
+          text: text,
+        );
+}
