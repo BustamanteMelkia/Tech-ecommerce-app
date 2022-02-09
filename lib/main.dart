@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/screens/cart.dart';
+import 'package:ecommerce_app/screens/checkout.dart';
 import 'package:ecommerce_app/screens/loginscreen.dart';
 import 'package:ecommerce_app/screens/no_favorites.dart';
 import 'package:ecommerce_app/screens/no_connection.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home: Cart(),
+      home: Checkout(),
     );
   }
 }
