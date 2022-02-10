@@ -29,6 +29,7 @@ class InicioPage extends StatelessWidget {
                           width: 267.0,
                           child: TextField(
                             onTap: (){
+                              Navigator.pushNamed(context, '/busqueda');
 
                             },
 
