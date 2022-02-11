@@ -24,7 +24,7 @@ class _CheckoutState extends State<Checkout> {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {
-            // Navigator.pop(context);
+            Navigator.of(context).pop();
           },
           icon: Icon(Icons.arrow_back, color: Colors.black),
         ),
@@ -87,7 +87,7 @@ class _CheckoutState extends State<Checkout> {
             ),
             SizedBox(height: 30),
             LargeButton(
-              text: 'Checkout',
+              text: 'Confirm and pay',
               onClick: () {
                 showModalBottomSheet<void>(
                   context: context,

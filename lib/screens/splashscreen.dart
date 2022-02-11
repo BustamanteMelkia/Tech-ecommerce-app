@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-void onPress() {}
-
 class Splash extends StatelessWidget {
   const Splash({Key? key}) : super(key: key);
 
@@ -41,17 +39,26 @@ class Splash extends StatelessWidget {
                         image: AssetImage('assets/images/splash.png'),
                         fit: BoxFit.contain))),
             ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: const Color(0xff5956E9),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 80, vertical: 22),
-                    textStyle: const TextStyle(
-                        fontSize: 20, fontWeight: FontWeight.w700)),
-                onPressed: onPress,
-                child: const Text('Get Started'))
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+                onPrimary: const Color(0xff5956E9),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 80,
+                  vertical: 22,
+                ),
+                textStyle: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, "auth");
+              },
+              child: const Text('Get Started'),
+            )
           ],
         ),
       ),

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 class NoFavorites extends StatelessWidget {
   const NoFavorites({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +13,7 @@ class NoFavorites extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {
-            // Navigator.pop(context);
+            Navigator.of(context).pop();
           },
           icon: Icon(Icons.arrow_back, color: Colors.black),
         ),

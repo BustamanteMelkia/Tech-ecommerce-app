@@ -1,11 +1,4 @@
-import 'package:ecommerce_app/screens/cart.dart';
-import 'package:ecommerce_app/screens/checkout.dart';
-import 'package:ecommerce_app/screens/loginscreen.dart';
-import 'package:ecommerce_app/screens/no_favorites.dart';
-import 'package:ecommerce_app/screens/no_connection.dart';
-import 'package:ecommerce_app/screens/no_history.dart';
-import 'package:ecommerce_app/screens/profile.dart';
-import 'package:ecommerce_app/screens/splashscreen.dart';
+import 'package:ecommerce_app/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,13 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Ecommerce App',
       theme: ThemeData(
         primaryColor: const Color(0xFF5956E9),
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home: Checkout(),
+      initialRoute: 'splash',
+      routes: getApplicationRoutes(),
     );
   }
 }

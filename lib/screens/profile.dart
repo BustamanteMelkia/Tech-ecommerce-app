@@ -14,7 +14,7 @@ class Profile extends StatelessWidget {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {
-            // Navigator.pop(context);
+            Navigator.of(context).pop();
           },
           icon: const Icon(Icons.arrow_back, color: Colors.black),
         ),

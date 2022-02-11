@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/screens/checkout.dart';
 import 'package:ecommerce_app/widgets/cart_item.dart';
 import 'package:ecommerce_app/widgets/button.dart';
 import 'package:ecommerce_app/widgets/empty_state.dart';
@@ -23,7 +24,7 @@ class _CartState extends State<Cart> {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           onPressed: () {
-            // Navigator.pop(context);
+            Navigator.of(context).pop();
           },
           icon: Icon(Icons.arrow_back, color: Colors.black),
         ),
@@ -91,7 +92,11 @@ class _CartState extends State<Cart> {
             SizedBox(height: 30),
             LargeButton(
               text: 'Checkout',
-              onClick: () {},
+              onClick: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => Checkout()),
+                );
+              },
             ),
             SizedBox(height: 20)
           ],
