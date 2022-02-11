@@ -1,16 +1,50 @@
 # ecommerce_app
+![](/views.png)
 
-A new Flutter project.
+## Documentation
 
-## Getting Started
+* [Install Flutter](https://flutter.dev/get-started/)
+* [Flutter documentation](https://flutter.dev/docs)
 
-This project is a starting point for a Flutter application.
+## How to Use 
 
-A few resources to get you started if this is your first Flutter project:
+**Step 1:**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Download or clone this repo by using the link below:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+https://github.com/BustamanteMelkia/Tech-ecommerce-app.git
+```
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get 
+```
+
+Here is the folder structure we have been using in this project
+
+```
+lib/
+|- routes/
+|- screens/
+|- widgets/
+|- main.dart
+```
+
+Now, lets dive into the lib folder which has the main code for the application.
+
+```
+1- routes — Contains all the routes of the application.
+4- screens — Contains all the screens of the project.
+6- widgets — Contains the common widgets for the application. For example, Button, CreditCard etc.
+8- main.dart - This is the starting point of the application. All the application level configurations are defined in this file i.e, theme, routes, title, etc.
+```
+
+
+
+## Conclusion
+
+We will be happy to answer any questions that you may have on this approach, and if you want to lend a hand with the project then please feel free to submit an issue and/or pull request 🙂
