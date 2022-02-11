@@ -38,7 +38,10 @@ class InicioPage extends StatelessWidget {
                               width: 267.0,
                               child: TextField(
                                 onTap: () {
-                                  Navigator.pushNamed(context, '/busqueda');
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                        builder: (context) => SearchScreen()),
+                                  );
                                 },
                                 onSubmitted: (value) {},
                                 controller: _searchController,
