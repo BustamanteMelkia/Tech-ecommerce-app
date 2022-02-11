@@ -24,3 +24,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+/*
+AppDrawer(child: InicioPage())
+ */
