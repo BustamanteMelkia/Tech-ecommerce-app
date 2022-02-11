@@ -1,15 +1,13 @@
-import 'package:ecommerce_app/screens/iniciopage.dart';
 import 'package:ecommerce_app/screens/loginscreen.dart';
 import 'package:ecommerce_app/screens/no_favorites.dart';
 import 'package:ecommerce_app/screens/no_connection.dart';
 import 'package:ecommerce_app/screens/no_history.dart';
 import 'package:ecommerce_app/screens/profile.dart';
 import 'package:ecommerce_app/screens/splashscreen.dart';
-import 'package:ecommerce_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +23,10 @@ class MyApp extends StatelessWidget {
         primaryColorLight: Colors.white,
         fontFamily: 'Raleway',
       ),
-      home:AppDrawer(child: InicioPage()),
+      home: const Profile(),
     );
   }
 }
+/*
+AppDrawer(child: InicioPage())
+ */
