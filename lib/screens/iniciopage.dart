@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/widgets/carditem.dart';
 import 'package:ecommerce_app/widgets/caroussel.dart';
+import 'package:ecommerce_app/widgets/drawer.dart';
 import 'package:ecommerce_app/widgets/tabbarmenu.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,10 @@ class InicioPage extends StatelessWidget {
                     child: Row(
 
                       children: [
-                        const Padding(padding: EdgeInsets.only(right: 20,),child: Icon(Icons.menu,size: 30),),
+                         Padding(padding: EdgeInsets.only(right: 20,),child: IconButton(onPressed: (){
+                           print('Presionando');
+                           AppDrawer.of(context)?.toggle();
+                        }, icon: Icon(Icons.menu,size: 30)),),
                         SizedBox(
                           width: 267.0,
                           child: TextField(
